@@ -1,0 +1,6 @@
+{
+    "watch": ["src/main"],
+    "ext": "js,ts",
+    "exec": "electron ."
+  }
+  
