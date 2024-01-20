@@ -6,7 +6,7 @@
   "main": "dist/main.js",
   "homepage": "https://not-a-homepage.com",
   "scripts": {
-    "start": "rm -rf dist && concurrently \"npm:watch-renderer\" \"npm:watch-main\" \"npm:electron\"",
+    "start": "rm -rf dist/main.js && concurrently \"npm:watch-renderer\" \"npm:watch-main\" \"npm:electron\"",
     "watch-main": "webpack --config webpack.main.config.js --watch --mode development",
     "watch-renderer": "webpack serve --config webpack.renderer.config.js --mode development",
     "electron": "wait-on dist/main.js tcp:3000 && nodemon --watch dist/main.js --exec electron .",
